@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.action {
+  background-color: #e8491d;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.adventure {
+  background-color: #268d37;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.science-fiction {
+  background-color: #4684c4;
+  color: white;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  padding: 0 1rem;
+  border-radius: 3px;
+}
+
+.fantastic {
+  background-color: #5e58a2;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.horror {
+  background-color: #2b2b2b;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.comedy {
+  background-color: #ffd800;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.animation {
+  background-color: #f6a318;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.drame {
+  background-color: #4882b4;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.thriller {
+  background-color: #565555;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+.war {
+  background-color: #8c4614;
+  color: white;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  border-radius: 3px;
+}
+
+body {
+  font-family: "Nunito";
+}
+
+header {
+  margin-top: 5rem;
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+header p {
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+  padding: 5rem 10rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 360px;
+  height: 500px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5mm;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition-duration: 0.2s;
+}
+
+.card__header {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 5mm 5mm 0 0;
+  align-content: center;
+}
+
+.card__infos__header {
+  background-color: white;
+  margin: 0 2rem;
+  padding: 1rem;
+  border-radius: 7px;
+  opacity: 0.8;
+}
+
+.card__header__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin: 0 1rem;
+}
+
+.card__header__director {
+  text-align: center;
+  color: gray;
+}
+
+.card__body {
+  flex-grow: 1;
+  text-align: justify;
+  margin: 1rem 2rem;
+}
+
+.card__body__desc {
+  font-size: 12pt;
+}
+
+.card__body__actors {
+  margin-top: 0.6rem;
+  font-size: 10pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__genres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 1rem 0;
+}
+
+.card__genres > div {
+  width: 33.33%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
