@@ -56,7 +56,7 @@ const Collection = [
     cast: ["Owen Teague", "Freya Allan", "Kevin Durand", "Peter Macon"],
     genre: ["Science-Fiction", "Adventure", "Action"],
     description:
-      "Generations after Caesar’s reign, apes have risen to power while humans are relegated to a primitive state. Under the rule of a tyrannical leader, a young ape embarks on a perilous journey that challenges his beliefs and will decide the fate of both apes and humans",
+      "Generations after Caesar’s reign, apes dominate while humans live primitively. A young ape's daring journey will shape the future of both species.",
     picture: "./images/planetoftheapes.jpg",
   },
   {
@@ -66,7 +66,7 @@ const Collection = [
     cast: ["Rebecca Hall", "Kaylee Hottle", "Brian Tyree Henry", "Dan Stevens"],
     genre: ["Action", "Science-Fiction", "Adventure", "Fantastic"],
     description:
-      "After their epic confrontation, Godzilla and Kong unite in the face of a colossal threat that could wipe out their existence and that of humanity. This fight reveals the origins of the Titans, the mysteries of Skull Island and the deep ties that bind them to our world.",
+      "Godzilla and Kong join forces against a colossal threat to their survival and humanity's. This battle uncovers Titan origins, Skull Island's secrets, and their connection to our world.",
     picture: "./images/godzillaxkong.jpg",
   },
   {
@@ -147,19 +147,7 @@ Collection.forEach((movie) => {
   movieBody.classList.add("card__body");
   movieContainer.appendChild(movieBody);
 
-  // ajouter la description du film
-  const movieDescription = document.createElement("p");
-  movieDescription.classList.add("card__body__desc");
-  movieDescription.textContent = movie.description;
-  movieBody.appendChild(movieDescription);
-
-  // ajouter les acteurs
-  const movieActors = document.createElement("p");
-  movieActors.classList.add("card__body__actors");
-  movieActors.textContent = movie.cast.join(", ");
-  movieBody.appendChild(movieActors);
-
-  // Créer des boutons pour les genres
+  // ajouter les genres
   const genresContainer = document.createElement("div");
   genresContainer.classList.add("card__genres");
   movie.genre.forEach((genre) => {
@@ -202,4 +190,16 @@ Collection.forEach((movie) => {
     genresContainer.appendChild(genreP);
   });
   movieBody.appendChild(genresContainer);
+
+  // ajouter la description du film
+  const movieDescription = document.createElement("p");
+  movieDescription.classList.add("card__body__desc");
+  movieDescription.textContent = movie.description;
+  movieBody.appendChild(movieDescription);
+
+  // ajouter les acteurs
+  const movieActors = document.createElement("p");
+  movieActors.classList.add("card__body__actors");
+  movieActors.textContent = movie.cast.join(", ");
+  movieBody.appendChild(movieActors);
 });

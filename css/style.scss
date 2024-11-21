@@ -159,6 +159,7 @@ $War: #8c4614;
 
 body {
   font-family: "Nunito";
+  background-color: #ebeced;
 }
 
 header {
@@ -170,15 +171,17 @@ header {
 
   & p {
     text-align: center;
+    margin: 0 5rem;
   }
 }
 
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  grid-column-gap: 5rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 3rem;
   padding: 5rem 10rem;
+  justify-items: center;
 }
 
 .card {
@@ -246,7 +249,7 @@ section {
 .card__genres {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 0.5rem;
   margin-top: auto;
   padding: 1rem 0;
